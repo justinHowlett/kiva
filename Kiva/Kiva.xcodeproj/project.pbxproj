@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA23370817B5DC3200C9CFBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23370717B5DC3200C9CFBC /* Foundation.framework */; };
+		DA23370A17B5DC3200C9CFBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23370917B5DC3200C9CFBC /* CoreGraphics.framework */; };
+		DA23370C17B5DC3200C9CFBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23370B17B5DC3200C9CFBC /* UIKit.framework */; };
+		DA23371217B5DC3200C9CFBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA23371017B5DC3200C9CFBC /* InfoPlist.strings */; };
+		DA23371417B5DC3200C9CFBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23371317B5DC3200C9CFBC /* main.m */; };
+		DA23371817B5DC3200C9CFBC /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23371717B5DC3200C9CFBC /* JHAppDelegate.m */; };
+		DA23371E17B5DC3200C9CFBC /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23371D17B5DC3200C9CFBC /* JHViewController.m */; };
+		DA23372017B5DC3200C9CFBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA23371F17B5DC3200C9CFBC /* Images.xcassets */; };
+		DA23372717B5DC3200C9CFBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23372617B5DC3200C9CFBC /* XCTest.framework */; };
+		DA23372817B5DC3300C9CFBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23370717B5DC3200C9CFBC /* Foundation.framework */; };
+		DA23372917B5DC3300C9CFBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23370B17B5DC3200C9CFBC /* UIKit.framework */; };
+		DA23373117B5DC3300C9CFBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA23372F17B5DC3300C9CFBC /* InfoPlist.strings */; };
+		DA23373317B5DC3300C9CFBC /* KivaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23373217B5DC3300C9CFBC /* KivaTests.m */; };
+		DA23375017B5DC7700C9CFBC /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23373E17B5DC7700C9CFBC /* AFHTTPClient.m */; };
+		DA23375117B5DC7700C9CFBC /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23373E17B5DC7700C9CFBC /* AFHTTPClient.m */; };
+		DA23375217B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374017B5DC7700C9CFBC /* AFHTTPRequestOperation.m */; };
+		DA23375317B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374017B5DC7700C9CFBC /* AFHTTPRequestOperation.m */; };
+		DA23375417B5DC7700C9CFBC /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374217B5DC7700C9CFBC /* AFImageRequestOperation.m */; };
+		DA23375517B5DC7700C9CFBC /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374217B5DC7700C9CFBC /* AFImageRequestOperation.m */; };
+		DA23375617B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374417B5DC7700C9CFBC /* AFJSONRequestOperation.m */; };
+		DA23375717B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374417B5DC7700C9CFBC /* AFJSONRequestOperation.m */; };
+		DA23375817B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374617B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m */; };
+		DA23375917B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374617B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m */; };
+		DA23375A17B5DC7700C9CFBC /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374917B5DC7700C9CFBC /* AFPropertyListRequestOperation.m */; };
+		DA23375B17B5DC7700C9CFBC /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374917B5DC7700C9CFBC /* AFPropertyListRequestOperation.m */; };
+		DA23375C17B5DC7700C9CFBC /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374B17B5DC7700C9CFBC /* AFURLConnectionOperation.m */; };
+		DA23375D17B5DC7700C9CFBC /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374B17B5DC7700C9CFBC /* AFURLConnectionOperation.m */; };
+		DA23375E17B5DC7700C9CFBC /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374D17B5DC7700C9CFBC /* AFXMLRequestOperation.m */; };
+		DA23375F17B5DC7700C9CFBC /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374D17B5DC7700C9CFBC /* AFXMLRequestOperation.m */; };
+		DA23376017B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */; };
+		DA23376117B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */; };
+		DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
+		DA23376617B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA23372A17B5DC3300C9CFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2336FC17B5DC3200C9CFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA23370317B5DC3200C9CFBC;
+			remoteInfo = Kiva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA23370417B5DC3200C9CFBC /* Kiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA23370717B5DC3200C9CFBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA23370917B5DC3200C9CFBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA23370B17B5DC3200C9CFBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA23370F17B5DC3200C9CFBC /* Kiva-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kiva-Info.plist"; sourceTree = "<group>"; };
+		DA23371117B5DC3200C9CFBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA23371317B5DC3200C9CFBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA23371517B5DC3200C9CFBC /* Kiva-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kiva-Prefix.pch"; sourceTree = "<group>"; };
+		DA23371617B5DC3200C9CFBC /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
+		DA23371717B5DC3200C9CFBC /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
+		DA23371C17B5DC3200C9CFBC /* JHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
+		DA23371D17B5DC3200C9CFBC /* JHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
+		DA23371F17B5DC3200C9CFBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA23372517B5DC3200C9CFBC /* KivaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KivaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA23372617B5DC3200C9CFBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA23372E17B5DC3300C9CFBC /* KivaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KivaTests-Info.plist"; sourceTree = "<group>"; };
+		DA23373017B5DC3300C9CFBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA23373217B5DC3300C9CFBC /* KivaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KivaTests.m; sourceTree = "<group>"; };
+		DA23373D17B5DC7700C9CFBC /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		DA23373E17B5DC7700C9CFBC /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		DA23373F17B5DC7700C9CFBC /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DA23374017B5DC7700C9CFBC /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DA23374117B5DC7700C9CFBC /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		DA23374217B5DC7700C9CFBC /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		DA23374317B5DC7700C9CFBC /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		DA23374417B5DC7700C9CFBC /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		DA23374517B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		DA23374617B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		DA23374717B5DC7700C9CFBC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DA23374817B5DC7700C9CFBC /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		DA23374917B5DC7700C9CFBC /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		DA23374A17B5DC7700C9CFBC /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DA23374B17B5DC7700C9CFBC /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DA23374C17B5DC7700C9CFBC /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		DA23374D17B5DC7700C9CFBC /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		DA23374E17B5DC7700C9CFBC /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DA23376317B5DC9800C9CFBC /* JHKivaDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaDatasource.h; sourceTree = "<group>"; };
+		DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaDatasource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA23370117B5DC3200C9CFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23370A17B5DC3200C9CFBC /* CoreGraphics.framework in Frameworks */,
+				DA23370C17B5DC3200C9CFBC /* UIKit.framework in Frameworks */,
+				DA23370817B5DC3200C9CFBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA23372217B5DC3200C9CFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23372717B5DC3200C9CFBC /* XCTest.framework in Frameworks */,
+				DA23372917B5DC3300C9CFBC /* UIKit.framework in Frameworks */,
+				DA23372817B5DC3300C9CFBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA2336FB17B5DC3200C9CFBC = {
+			isa = PBXGroup;
+			children = (
+				DA23370D17B5DC3200C9CFBC /* Kiva */,
+				DA23372C17B5DC3300C9CFBC /* KivaTests */,
+				DA23370617B5DC3200C9CFBC /* Frameworks */,
+				DA23370517B5DC3200C9CFBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA23370517B5DC3200C9CFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA23370417B5DC3200C9CFBC /* Kiva.app */,
+				DA23372517B5DC3200C9CFBC /* KivaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA23370617B5DC3200C9CFBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA23373C17B5DC7700C9CFBC /* AFNetworking */,
+				DA23370717B5DC3200C9CFBC /* Foundation.framework */,
+				DA23370917B5DC3200C9CFBC /* CoreGraphics.framework */,
+				DA23370B17B5DC3200C9CFBC /* UIKit.framework */,
+				DA23372617B5DC3200C9CFBC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA23370D17B5DC3200C9CFBC /* Kiva */ = {
+			isa = PBXGroup;
+			children = (
+				DA23371617B5DC3200C9CFBC /* JHAppDelegate.h */,
+				DA23371717B5DC3200C9CFBC /* JHAppDelegate.m */,
+				DA23371C17B5DC3200C9CFBC /* JHViewController.h */,
+				DA23371D17B5DC3200C9CFBC /* JHViewController.m */,
+				DA23376217B5DC8100C9CFBC /* DataSources */,
+				DA23371F17B5DC3200C9CFBC /* Images.xcassets */,
+				DA23370E17B5DC3200C9CFBC /* Supporting Files */,
+			);
+			path = Kiva;
+			sourceTree = "<group>";
+		};
+		DA23370E17B5DC3200C9CFBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA23370F17B5DC3200C9CFBC /* Kiva-Info.plist */,
+				DA23371017B5DC3200C9CFBC /* InfoPlist.strings */,
+				DA23371317B5DC3200C9CFBC /* main.m */,
+				DA23371517B5DC3200C9CFBC /* Kiva-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA23372C17B5DC3300C9CFBC /* KivaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA23373217B5DC3300C9CFBC /* KivaTests.m */,
+				DA23372D17B5DC3300C9CFBC /* Supporting Files */,
+			);
+			path = KivaTests;
+			sourceTree = "<group>";
+		};
+		DA23372D17B5DC3300C9CFBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA23372E17B5DC3300C9CFBC /* KivaTests-Info.plist */,
+				DA23372F17B5DC3300C9CFBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA23373C17B5DC7700C9CFBC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DA23373D17B5DC7700C9CFBC /* AFHTTPClient.h */,
+				DA23373E17B5DC7700C9CFBC /* AFHTTPClient.m */,
+				DA23373F17B5DC7700C9CFBC /* AFHTTPRequestOperation.h */,
+				DA23374017B5DC7700C9CFBC /* AFHTTPRequestOperation.m */,
+				DA23374117B5DC7700C9CFBC /* AFImageRequestOperation.h */,
+				DA23374217B5DC7700C9CFBC /* AFImageRequestOperation.m */,
+				DA23374317B5DC7700C9CFBC /* AFJSONRequestOperation.h */,
+				DA23374417B5DC7700C9CFBC /* AFJSONRequestOperation.m */,
+				DA23374517B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.h */,
+				DA23374617B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m */,
+				DA23374717B5DC7700C9CFBC /* AFNetworking.h */,
+				DA23374817B5DC7700C9CFBC /* AFPropertyListRequestOperation.h */,
+				DA23374917B5DC7700C9CFBC /* AFPropertyListRequestOperation.m */,
+				DA23374A17B5DC7700C9CFBC /* AFURLConnectionOperation.h */,
+				DA23374B17B5DC7700C9CFBC /* AFURLConnectionOperation.m */,
+				DA23374C17B5DC7700C9CFBC /* AFXMLRequestOperation.h */,
+				DA23374D17B5DC7700C9CFBC /* AFXMLRequestOperation.m */,
+				DA23374E17B5DC7700C9CFBC /* UIImageView+AFNetworking.h */,
+				DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DA23376217B5DC8100C9CFBC /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				DA23376317B5DC9800C9CFBC /* JHKivaDatasource.h */,
+				DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA23370317B5DC3200C9CFBC /* Kiva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA23373617B5DC3300C9CFBC /* Build configuration list for PBXNativeTarget "Kiva" */;
+			buildPhases = (
+				DA23370017B5DC3200C9CFBC /* Sources */,
+				DA23370117B5DC3200C9CFBC /* Frameworks */,
+				DA23370217B5DC3200C9CFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kiva;
+			productName = Kiva;
+			productReference = DA23370417B5DC3200C9CFBC /* Kiva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA23372417B5DC3200C9CFBC /* KivaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA23373917B5DC3300C9CFBC /* Build configuration list for PBXNativeTarget "KivaTests" */;
+			buildPhases = (
+				DA23372117B5DC3200C9CFBC /* Sources */,
+				DA23372217B5DC3200C9CFBC /* Frameworks */,
+				DA23372317B5DC3200C9CFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA23372B17B5DC3300C9CFBC /* PBXTargetDependency */,
+			);
+			name = KivaTests;
+			productName = KivaTests;
+			productReference = DA23372517B5DC3200C9CFBC /* KivaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2336FC17B5DC3200C9CFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JH;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Justin Howlett";
+				TargetAttributes = {
+					DA23372417B5DC3200C9CFBC = {
+						TestTargetID = DA23370317B5DC3200C9CFBC;
+					};
+				};
+			};
+			buildConfigurationList = DA2336FF17B5DC3200C9CFBC /* Build configuration list for PBXProject "Kiva" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA2336FB17B5DC3200C9CFBC;
+			productRefGroup = DA23370517B5DC3200C9CFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA23370317B5DC3200C9CFBC /* Kiva */,
+				DA23372417B5DC3200C9CFBC /* KivaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA23370217B5DC3200C9CFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23372017B5DC3200C9CFBC /* Images.xcassets in Resources */,
+				DA23371217B5DC3200C9CFBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA23372317B5DC3200C9CFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23373117B5DC3300C9CFBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA23370017B5DC3200C9CFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */,
+				DA23375417B5DC7700C9CFBC /* AFImageRequestOperation.m in Sources */,
+				DA23371817B5DC3200C9CFBC /* JHAppDelegate.m in Sources */,
+				DA23375A17B5DC7700C9CFBC /* AFPropertyListRequestOperation.m in Sources */,
+				DA23371E17B5DC3200C9CFBC /* JHViewController.m in Sources */,
+				DA23375C17B5DC7700C9CFBC /* AFURLConnectionOperation.m in Sources */,
+				DA23375E17B5DC7700C9CFBC /* AFXMLRequestOperation.m in Sources */,
+				DA23375617B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */,
+				DA23376017B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */,
+				DA23375817B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA23375217B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */,
+				DA23371417B5DC3200C9CFBC /* main.m in Sources */,
+				DA23375017B5DC7700C9CFBC /* AFHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA23372117B5DC3200C9CFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA23375D17B5DC7700C9CFBC /* AFURLConnectionOperation.m in Sources */,
+				DA23376117B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */,
+				DA23375F17B5DC7700C9CFBC /* AFXMLRequestOperation.m in Sources */,
+				DA23375517B5DC7700C9CFBC /* AFImageRequestOperation.m in Sources */,
+				DA23376617B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */,
+				DA23375B17B5DC7700C9CFBC /* AFPropertyListRequestOperation.m in Sources */,
+				DA23375317B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */,
+				DA23375917B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA23373317B5DC3300C9CFBC /* KivaTests.m in Sources */,
+				DA23375717B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */,
+				DA23375117B5DC7700C9CFBC /* AFHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA23372B17B5DC3300C9CFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA23370317B5DC3200C9CFBC /* Kiva */;
+			targetProxy = DA23372A17B5DC3300C9CFBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA23371017B5DC3200C9CFBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA23371117B5DC3200C9CFBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA23372F17B5DC3300C9CFBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA23373017B5DC3300C9CFBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA23373417B5DC3300C9CFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA23373517B5DC3300C9CFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA23373717B5DC3300C9CFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
+				INFOPLIST_FILE = "Kiva/Kiva-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA23373817B5DC3300C9CFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
+				INFOPLIST_FILE = "Kiva/Kiva-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA23373A17B5DC3300C9CFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kiva.app/Kiva";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KivaTests/KivaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DA23373B17B5DC3300C9CFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kiva.app/Kiva";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
+				INFOPLIST_FILE = "KivaTests/KivaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2336FF17B5DC3200C9CFBC /* Build configuration list for PBXProject "Kiva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA23373417B5DC3300C9CFBC /* Debug */,
+				DA23373517B5DC3300C9CFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA23373617B5DC3300C9CFBC /* Build configuration list for PBXNativeTarget "Kiva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA23373717B5DC3300C9CFBC /* Debug */,
+				DA23373817B5DC3300C9CFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA23373917B5DC3300C9CFBC /* Build configuration list for PBXNativeTarget "KivaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA23373A17B5DC3300C9CFBC /* Debug */,
+				DA23373B17B5DC3300C9CFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA2336FC17B5DC3200C9CFBC /* Project object */;
+}
