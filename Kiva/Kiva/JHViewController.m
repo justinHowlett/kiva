@@ -8,6 +8,7 @@
 
 #import "JHViewController.h"
 #import "JHKivaDatasource.h"
+#import "JHKivaLoanModel.h"
 
 @interface JHViewController ()
 
@@ -20,8 +21,10 @@
     [super viewDidLoad];
     
     JHKivaDatasource* datasource = [[JHKivaDatasource alloc]init];
-    [datasource fetchNewestLoansWithCompletion:^(id data, BOOL didSucceed) {
-        NSLog(@"kiva newest is %@",data);
+    [datasource fetchNewestLoansWithCompletion:^(NSArray* loanModels, BOOL didSucceed) {
+        for (JHKivaLoanModel *loan in loanModels){
+            NSLog(@"loan is %@ use is %@",loan,loan.use);
+        }
     }];
 }
 

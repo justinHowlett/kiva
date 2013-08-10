@@ -9,6 +9,8 @@
 #import "JHKivaDatasource.h"
 #import "AFNetworking.h"
 #import "AFHTTPRequestOperation.h"
+#import "JHKivaLoanModel.h"
+#import "JHKivaLoanLocationModel.h"
 
 //APP ID com.justinhowlett.kiva
 //Client ID com.justinhowlett.kiva
@@ -28,7 +30,7 @@
  */
 
 static const NSString*  kNewestLoanBaseURL  = @"http://api.kivaws.org/v1/loans/newest.json";
-static const NSUInteger kNumberOfNewLoans   = 30;
+static const NSUInteger kNumberOfNewLoans   = 2;
 static const NSString*  kKivaAppId          = @"com.justinhowlett.kiva";
 static const NSString*  kKivaClientId       = @"com.justinhowlett.kiva";
 static const NSString*  kKivaClientSecret   = @"xxDvDkrwpiqejqtnDqDimtvFeyJvEouF";
@@ -43,10 +45,11 @@ static const NSString*  kKivaClientSecret   = @"xxDvDkrwpiqejqtnDqDimtvFeyJvEouF
     NSURLRequest* request = [self requestWithMethod:@"GET" withURL:[self newestLoansURL] andBodyData:nil];
 
     AFJSONRequestOperation *operation;
-   
+    
     operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         if (completion){
-            completion(JSON,YES);
+            NSArray* modelArray = [self kivaLoanModelsForData:JSON];
+            completion(modelArray,YES);
         }
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (completion){
@@ -59,6 +62,42 @@ static const NSString*  kKivaClientSecret   = @"xxDvDkrwpiqejqtnDqDimtvFeyJvEouF
 
 -(NSString*)newestLoansURL{
     return [NSString stringWithFormat:@"%@?app_id=%@&per_page=%d",kNewestLoanBaseURL,kKivaAppId,kNumberOfNewLoans];
+}
+
+-(NSArray*)kivaLoanModelsForData:(id)data{
+    
+    NSMutableArray* loanModelArray = [[NSMutableArray alloc]init];
+    
+    NSArray* loansArray = [data[@"loans"] copy];
+    
+    for (NSDictionary* loan in loansArray){
+       
+        JHKivaLoanModel* loanModel = [[JHKivaLoanModel alloc]init];
+        
+        loanModel.activity          = loan[@"activity"];
+        loanModel.basketAmount      = loan[@"basket_amount"];
+        loanModel.borrowerCount     = loan[@"borrower_count"];
+        loanModel.fundedAmount      = loan[@"funded_amount"];
+        loanModel.loanId            = loan[@"id"];
+        loanModel.imageInfo         = loan[@"image"];
+        loanModel.loanAmount        = loan[@"loan_amount"];
+        loanModel.name              = loan[@"name"];
+        loanModel.partnerId         = loan[@"partner_id"];
+        loanModel.sector            = loan[@"sector"];
+        loanModel.status            = loan[@"status"];
+        loanModel.use               = loan[@"use"];
+        
+        JHKivaLoanLocationModel* location = [[JHKivaLoanLocationModel alloc]init];
+        location.country        = loan[@"location"][@"country"];
+        location.countryCode    = loan[@"location"][@"country_code"];
+        location.town           = loan[@"location"][@"town"];
+       
+        loanModel.location = location;
+
+        [loanModelArray addObject:loanModel];
+    }
+    
+    return loanModelArray;
 }
 
 #pragma mark -

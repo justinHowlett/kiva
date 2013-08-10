@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^JHKivaDatasourceCompletion)(id data, BOOL didSucceed);
+typedef void(^JHKivaDatasourceCompletion)(NSArray* loanModels, BOOL didSucceed); // takes an NSArray of JHKivaLoanModels
 
 @interface JHKivaDatasource : NSObject
 -(void)fetchNewestLoansWithCompletion:(JHKivaDatasourceCompletion)completion;

@@ -40,6 +40,10 @@
 		DA23376117B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */; };
 		DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
 		DA23376617B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
+		DA23376A17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */; };
+		DA23376B17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */; };
+		DA23376E17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */; };
+		DA23376F17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,10 @@
 		DA23374F17B5DC7700C9CFBC /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		DA23376317B5DC9800C9CFBC /* JHKivaDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaDatasource.h; sourceTree = "<group>"; };
 		DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaDatasource.m; sourceTree = "<group>"; };
+		DA23376817B5E32700C9CFBC /* JHKivaLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaLoanModel.h; sourceTree = "<group>"; };
+		DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanModel.m; sourceTree = "<group>"; };
+		DA23376C17B5F06000C9CFBC /* JHKivaLoanLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaLoanLocationModel.h; sourceTree = "<group>"; };
+		DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanLocationModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 				DA23371717B5DC3200C9CFBC /* JHAppDelegate.m */,
 				DA23371C17B5DC3200C9CFBC /* JHViewController.h */,
 				DA23371D17B5DC3200C9CFBC /* JHViewController.m */,
+				DA23376717B5E2F200C9CFBC /* Models */,
 				DA23376217B5DC8100C9CFBC /* DataSources */,
 				DA23371F17B5DC3200C9CFBC /* Images.xcassets */,
 				DA23370E17B5DC3200C9CFBC /* Supporting Files */,
@@ -225,6 +234,17 @@
 				DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */,
 			);
 			name = DataSources;
+			sourceTree = "<group>";
+		};
+		DA23376717B5E2F200C9CFBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA23376817B5E32700C9CFBC /* JHKivaLoanModel.h */,
+				DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */,
+				DA23376C17B5F06000C9CFBC /* JHKivaLoanLocationModel.h */,
+				DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +354,9 @@
 				DA23375617B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */,
 				DA23376017B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */,
 				DA23375817B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA23376A17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */,
 				DA23375217B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */,
+				DA23376E17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */,
 				DA23371417B5DC3200C9CFBC /* main.m in Sources */,
 				DA23375017B5DC7700C9CFBC /* AFHTTPClient.m in Sources */,
 			);
@@ -346,12 +368,14 @@
 			files = (
 				DA23375D17B5DC7700C9CFBC /* AFURLConnectionOperation.m in Sources */,
 				DA23376117B5DC7700C9CFBC /* UIImageView+AFNetworking.m in Sources */,
+				DA23376F17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */,
 				DA23375F17B5DC7700C9CFBC /* AFXMLRequestOperation.m in Sources */,
 				DA23375517B5DC7700C9CFBC /* AFImageRequestOperation.m in Sources */,
 				DA23376617B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */,
 				DA23375B17B5DC7700C9CFBC /* AFPropertyListRequestOperation.m in Sources */,
 				DA23375317B5DC7700C9CFBC /* AFHTTPRequestOperation.m in Sources */,
 				DA23375917B5DC7700C9CFBC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				DA23376B17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */,
 				DA23373317B5DC3300C9CFBC /* KivaTests.m in Sources */,
 				DA23375717B5DC7700C9CFBC /* AFJSONRequestOperation.m in Sources */,
 				DA23375117B5DC7700C9CFBC /* AFHTTPClient.m in Sources */,
