@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^JHKivaDatasourceCompletion)(NSArray* loanModels, BOOL didSucceed); // takes an NSArray of JHKivaLoanModels
+@class JHKivaPartnerModel;
+
+typedef void(^JHKivaNewestLoansCompletion)(NSArray* loanModels, BOOL didSucceed); // takes an NSArray of JHKivaLoanModels
+typedef void(^JHKivaPartnerCompletion)(JHKivaPartnerModel* partnerModel, BOOL didSucceed);
 
 @interface JHKivaDatasource : NSObject
--(void)fetchNewestLoansWithCompletion:(JHKivaDatasourceCompletion)completion;
+-(void)fetchNewestLoansWithCompletion:(JHKivaNewestLoansCompletion)completion;
+-(void)fetchPartnerWithId:(NSUInteger)partnerId andCompletion:(JHKivaPartnerCompletion)completion;
 @end
