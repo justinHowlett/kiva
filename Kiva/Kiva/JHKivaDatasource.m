@@ -14,20 +14,6 @@
 #import "JHKivaLoanModel.h"
 #import "JHKivaLoanLocationModel.h"
 
-
-/*
- OAuth Endpoints
- Lender Authorization
- https://www.kiva.org/oauth/authorize
- Redirect URI
- oob
- Request Token
- https://api.kivaws.org/oauth/request_token
- Access Token
- https://api.kivaws.org/oauth/access_token
- 
- */
-
 /** Newest loans */
 static const NSString*  kNewestLoanBaseURL  = @"http://api.kivaws.org/v1/loans/newest.json";
 static const NSUInteger kNumberOfNewLoans   = 2;
@@ -139,7 +125,7 @@ static const NSString*  kKivaClientSecret   = @"xxDvDkrwpiqejqtnDqDimtvFeyJvEouF
 
 -(JHKivaPartnerModel*)partnerModelWithId:(NSUInteger)partnerId andData:(id)data{
     
-    NSLog(@"begin partner processing");
+    //TODO: proccess on BG thread
     
     NSArray* partners               = data[@"partners"];
     NSPredicate *partnerIdPredicate = [NSPredicate predicateWithFormat:@"id ==[c] %d", partnerId];
@@ -160,8 +146,6 @@ static const NSString*  kKivaClientSecret   = @"xxDvDkrwpiqejqtnDqDimtvFeyJvEouF
     partnerModel.name               = partnerData[@"name"];
     partnerModel.rating             = partnerData[@"rating"];
     partnerModel.totalAmountRaised  = partnerData[@"total_amount_raised"];
-    
-    NSLog(@"end partner processing");
     
     return partnerModel;
 }

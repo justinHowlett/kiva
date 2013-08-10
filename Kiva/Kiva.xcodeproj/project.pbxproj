@@ -18,6 +18,8 @@
 		DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
 		DA23376A17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */; };
 		DA23376E17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */; };
+		DA3DF65A17B6C5AE0000FD01 /* JHWorldBankDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF65917B6C5AE0000FD01 /* JHWorldBankDatasource.m */; };
+		DA3DF65D17B6CA430000FD01 /* JHWorldBankCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF65C17B6CA430000FD01 /* JHWorldBankCountryModel.m */; };
 		DA40AAE017B6BE3B00B4663C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA40AADF17B6BE3B00B4663C /* MobileCoreServices.framework */; };
 		DA40AAE217B6BE4A00B4663C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA40AAE117B6BE4A00B4663C /* SystemConfiguration.framework */; };
 		DA40AAF717B6BE7500B4663C /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40AAE517B6BE7500B4663C /* AFHTTPClient.m */; };
@@ -55,6 +57,10 @@
 		DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanModel.m; sourceTree = "<group>"; };
 		DA23376C17B5F06000C9CFBC /* JHKivaLoanLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaLoanLocationModel.h; sourceTree = "<group>"; };
 		DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanLocationModel.m; sourceTree = "<group>"; };
+		DA3DF65817B6C5AE0000FD01 /* JHWorldBankDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWorldBankDatasource.h; sourceTree = "<group>"; };
+		DA3DF65917B6C5AE0000FD01 /* JHWorldBankDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWorldBankDatasource.m; sourceTree = "<group>"; };
+		DA3DF65B17B6CA430000FD01 /* JHWorldBankCountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWorldBankCountryModel.h; sourceTree = "<group>"; };
+		DA3DF65C17B6CA430000FD01 /* JHWorldBankCountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWorldBankCountryModel.m; sourceTree = "<group>"; };
 		DA40AADF17B6BE3B00B4663C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DA40AAE117B6BE4A00B4663C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA40AAE417B6BE7500B4663C /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 			children = (
 				DA23376317B5DC9800C9CFBC /* JHKivaDatasource.h */,
 				DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */,
+				DA3DF65817B6C5AE0000FD01 /* JHWorldBankDatasource.h */,
+				DA3DF65917B6C5AE0000FD01 /* JHWorldBankDatasource.m */,
 			);
 			name = DataSources;
 			sourceTree = "<group>";
@@ -183,10 +191,20 @@
 		DA23376717B5E2F200C9CFBC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA3DF65E17B6CAF80000FD01 /* Country Model */,
 				DAFA95E317B6B86C0024205D /* Loan Model */,
 				DAFA95E417B6B8720024205D /* Partner Model */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		DA3DF65E17B6CAF80000FD01 /* Country Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA3DF65B17B6CA430000FD01 /* JHWorldBankCountryModel.h */,
+				DA3DF65C17B6CA430000FD01 /* JHWorldBankCountryModel.m */,
+			);
+			name = "Country Model";
 			sourceTree = "<group>";
 		};
 		DA40AAE317B6BE7500B4663C /* AFNetworking */ = {
@@ -264,11 +282,6 @@
 				CLASSPREFIX = JH;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Justin Howlett";
-				TargetAttributes = {
-					DA23372417B5DC3200C9CFBC = {
-						TestTargetID = DA23370317B5DC3200C9CFBC;
-					};
-				};
 			};
 			buildConfigurationList = DA2336FF17B5DC3200C9CFBC /* Build configuration list for PBXProject "Kiva" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -306,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */,
+				DA3DF65D17B6CA430000FD01 /* JHWorldBankCountryModel.m in Sources */,
+				DA3DF65A17B6C5AE0000FD01 /* JHWorldBankDatasource.m in Sources */,
 				DA23371817B5DC3200C9CFBC /* JHAppDelegate.m in Sources */,
 				DA23371E17B5DC3200C9CFBC /* JHViewController.m in Sources */,
 				DAFA95E117B6B8620024205D /* JHKivaPartnerModel.m in Sources */,
