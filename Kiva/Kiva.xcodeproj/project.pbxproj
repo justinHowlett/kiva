@@ -18,6 +18,7 @@
 		DA23376517B5DC9800C9CFBC /* JHKivaDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376417B5DC9800C9CFBC /* JHKivaDatasource.m */; };
 		DA23376A17B5E32700C9CFBC /* JHKivaLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */; };
 		DA23376E17B5F06000C9CFBC /* JHKivaLoanLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */; };
+		DA3C502617B95232007AB630 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3C502517B95232007AB630 /* XCTest.framework */; };
 		DA3DF65A17B6C5AE0000FD01 /* JHWorldBankDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF65917B6C5AE0000FD01 /* JHWorldBankDatasource.m */; };
 		DA3DF65D17B6CA430000FD01 /* JHWorldBankCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF65C17B6CA430000FD01 /* JHWorldBankCountryModel.m */; };
 		DA40AAE017B6BE3B00B4663C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA40AADF17B6BE3B00B4663C /* MobileCoreServices.framework */; };
@@ -57,6 +58,7 @@
 		DA23376917B5E32700C9CFBC /* JHKivaLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanModel.m; sourceTree = "<group>"; };
 		DA23376C17B5F06000C9CFBC /* JHKivaLoanLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHKivaLoanLocationModel.h; sourceTree = "<group>"; };
 		DA23376D17B5F06000C9CFBC /* JHKivaLoanLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHKivaLoanLocationModel.m; sourceTree = "<group>"; };
+		DA3C502517B95232007AB630 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DA3DF65817B6C5AE0000FD01 /* JHWorldBankDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWorldBankDatasource.h; sourceTree = "<group>"; };
 		DA3DF65917B6C5AE0000FD01 /* JHWorldBankDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWorldBankDatasource.m; sourceTree = "<group>"; };
 		DA3DF65B17B6CA430000FD01 /* JHWorldBankCountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWorldBankCountryModel.h; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3C502617B95232007AB630 /* XCTest.framework in Frameworks */,
 				DA40AAE217B6BE4A00B4663C /* SystemConfiguration.framework in Frameworks */,
 				DA23370A17B5DC3200C9CFBC /* CoreGraphics.framework in Frameworks */,
 				DA23370C17B5DC3200C9CFBC /* UIKit.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		DA23370617B5DC3200C9CFBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA3C502517B95232007AB630 /* XCTest.framework */,
 				DA40AAE317B6BE7500B4663C /* AFNetworking */,
 				DA40AAE117B6BE4A00B4663C /* SystemConfiguration.framework */,
 				DA40AADF17B6BE3B00B4663C /* MobileCoreServices.framework */,
@@ -434,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
 				INFOPLIST_FILE = "Kiva/Kiva-Info.plist";
@@ -448,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kiva/Kiva-Prefix.pch";
 				INFOPLIST_FILE = "Kiva/Kiva-Info.plist";

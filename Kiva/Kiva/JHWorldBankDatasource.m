@@ -79,7 +79,9 @@ static const NSString* kWorldBankIndicatorsEndpoint = @"/indicators/";
 
 -(NSString*)URLForIndicatorKey:(NSString*)indicator andCountryCode:(NSString*)countryCode{
     
-    return [NSString stringWithFormat:@"%@%@%@%@?format=json&date=2010:2010",kWorldBankBaseURL,countryCode,kWorldBankIndicatorsEndpoint,indicator];;
+    NSString* url = [NSString stringWithFormat:@"%@%@%@%@?format=json&date=2010:2010",kWorldBankBaseURL,countryCode,kWorldBankIndicatorsEndpoint,indicator];
+    
+    return url;
 }
 
 -(void)incrementIndicatorRequestCompletions{
@@ -144,12 +146,6 @@ static const NSString* kWorldBankIndicatorsEndpoint = @"/indicators/";
     return _defaultIndicators;
 }
 
--(NSString*)countryModelURLForCountryCode:(NSString*)countryCode{
-    
-    
-    
-    return nil;
-}
 
 #pragma mark -
 #pragma mark - Utility methods
